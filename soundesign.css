@@ -1,0 +1,85 @@
+.centered {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+body{
+    background-color: Black;
+	background-image: url(wave.gif);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    color: white;
+    font-size: 1.68887vw;
+}
+h1{
+    font-size: 570%;
+	transform: translate(0vw,9vw);
+    
+}
+h2{
+    font-size: 300%;
+	transform: translate(0vw,-9vw);
+}
+input{
+    font-size: 430%;
+	transform: translate(0vw,-3vw);
+}
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes mooveup{
+    from{
+        transform: translate(0vw,0vw)
+    }
+    to{
+        transform: translate(0vw,-7vw)
+    }
+}
+@keyframes moovedown{
+    from{
+        transform: translate(0vw,0vw)
+    }
+    to{
+        transform: translate(0vw,7vw)
+    }
+}
+.fadein{
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.fadein.first{
+    animation-delay: 0.1s;
+}
+.fadein.second{
+    animation-delay: 4.6s;
+}
+.mooveup{
+    position: relative;
+    animation-name: mooveup;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.moovedown{
+    position: relative;
+    animation-name: moovedown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.mooveup.therd{
+    animation-delay: 9s;
+}
+.moovedown.therd{
+    animation-delay: 9s;
+}
+.fadein.foreth{
+  animation-delay: 10s;
+}
